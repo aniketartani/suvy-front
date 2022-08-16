@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto&display=swap");
+body {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: medium;
+}
+@media (min-width: 650px) {
+  .dashboard {
+    background: url("./images/attr5.png") right bottom no-repeat,
+      url("./images/attr4.png") right bottom no-repeat,
+      url("./images/attr3.png") right bottom no-repeat,
+      url("./images/attr2.png") right bottom no-repeat,
+      url("./images/attr1.png") right bottom no-repeat,
+      url("./images/quote.png") right bottom no-repeat,
+      url("./images/right.png") right bottom no-repeat,
+      url("./images/boy.png") left bottom no-repeat;
+    background-position: 33% 52%, 29% 33%, 19% 25%, 11% 33%, 5% 52%, 12% 10%,
+      right bottom, 12% 85%;
+    height: 700px;
+  }
+  .form {
+    position: absolute;
+    right: 0;
+    margin: 150px;
+    margin-right: 80px;
+    /* max-width: 300px; */
+    padding: 16px;
+    background-color: white;
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+      ),
+      linear-gradient(
+        112.6deg,
+        rgba(201, 201, 201, 0.13) -7.92%,
+        rgba(196, 196, 196, 0.69) 90.22%
+      );
+    /* opacity: 0.7; */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+  }
+  .options {
+    width: 55%;
+  }
+  .plans {
+    width: 167px;
+  }
+  .desktop-carousel {
+    display: block;
+  }
+  .mobile-carousel {
+    display: none;
+  }
+  .video {
+    width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  .dashboard {
+    background: url("./images/right.png") right bottom no-repeat;
+    height: 600px;
+  }
+  .form {
+    position: absolute;
+    right: 0;
+    align-items: center;
+    margin-left: 150px;
+    padding: 16px;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+      ),
+      linear-gradient(
+        112.6deg,
+        rgba(201, 201, 201, 0.13) -7.92%,
+        rgba(196, 196, 196, 0.69) 90.22%
+      );
+    /* opacity: 0.7; */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+  }
+  .plans {
+    width: 110px;
+  }
+  .options {
+    width: 100%;
+  }
+  .desktop-carousel {
+    display: none;
+  }
+  .mobile-carousel {
+    display: block;
+  }
+  .video {
+    width: 100%;
+  }
+}
+
+.dash {
+  display: flex;
+  font-style: normal;
+  color: #ffffff;
+  flex-direction: row;
+}
+.dash:before,
+.dash:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.dash:before {
+  margin-right: 10px;
+}
+.dash:after {
+  margin-left: 10px;
+}
+/* Add styles to the form container */
+
+input {
+  /* position: absolute; */
+  bottom: 65.51%;
+
+  background: #f5f5fa;
+  /* Inner shadow 2 */
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  outline: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25),
+    inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #ffffff;
+  border-radius: 10px;
+}
+
+/* Set a style for the submit button */
+.btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+
+.set-width {
+  width: 50%;
+}
+
+/* Found Useful -> Please Subscribe my Youtube Channel
+https://bit.ly/3m9avif
+*/
+
+/*==================== 
+  Footer 
+====================== */
+
+/* Main Footer */
+footer .main-footer {
+  padding: 20px 0;
+  background: #252525;
+}
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Copy Right Footer */
+.footer-copyright {
+  background: #1e2833;
+  padding: 5px 0;
+}
+.footer-copyright .logo {
+  display: inherit;
+}
+.footer-copyright nav {
+  float: right;
+  margin-top: 5px;
+}
+.footer-copyright p {
+  color: #969696;
+  margin: 2px 0 0;
+}
+
+/* Footer Top */
+.footer-top {
+  background: #1e2833;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #1e2833;
+}
+
+/* Footer transparent */
+footer.transparent .footer-top,
+footer.transparent .main-footer {
+  background: transparent;
+}
+footer.transparent .footer-copyright {
+  background: none repeat scroll 0 0 #1e2833;
+}
+
+/* Footer light */
+footer.light .footer-top {
+  background: #f9f9f9;
+}
+footer.light .main-footer {
+  background: #f9f9f9;
+}
+footer.light .footer-copyright {
+  background: none repeat scroll 0 0 #1e2833;
+}
+
+/* Footer 4 */
+.footer- .logo {
+  display: inline-block;
+}
+
+/*==================== 
+  Widgets 
+====================== */
+.widget {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.widget.widget-last {
+  margin-bottom: 0px;
+}
+.widget.no-box {
+  padding: 0;
+  background-color: transparent;
+  margin-bottom: 40px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+}
+.widget.subscribe p {
+  margin-bottom: 18px;
+}
+.widget li a {
+  color: #ff8d1e;
+}
+.widget li a:hover {
+  color: #4b92dc;
+}
+.widget-title {
+  margin-bottom: 20px;
+}
+.widget-title span {
+  background: #839fad none repeat scroll 0 0;
+  display: block;
+  height: 1px;
+  margin-top: 25px;
+  position: relative;
+  width: 20%;
+}
+.widget-title span::after {
+  background: inherit;
+  content: "";
+  height: inherit;
+  position: absolute;
+  top: -4px;
+  width: 50%;
+}
+.widget-title.text-center span,
+.widget-title.text-center span::after {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.widget .badge {
+  float: right;
+  background: #7f7f7f;
+}
+
+.typo-light h1,
+.typo-light h2,
+.typo-light h3,
+.typo-light h4,
+.typo-light h5,
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small {
+  color: #fff;
+}
+.activePlan {
+  background-color: #e57e25 !important;
+}
+
+ul.social-footer2 {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+ul.social-footer2 li {
+  display: inline-block;
+  padding: 0;
+}
+ul.social-footer2 li a:hover {
+  background-color: #ff8d1e;
+}
+ul.social-footer2 li a {
+  display: block;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
